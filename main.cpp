@@ -10,7 +10,23 @@ void test1() {
     playlist.addSong("Safe And Sound");
     playlist.addSong("alpha waves");
     playlist.addSong("Dawning");
+    playlist.addSong("Curiosity");
+    playlist.addSong("Coda");
+    playlist.addSong("When They Come");
+    playlist.addSong("Event Horizon");
+    playlist.addSong("Laugavegur");
+    playlist.addSong("The Disccovery");
+
+    cout << "List all songs:" << endl;
     playlist.listAllSongs();
+
+    cout << "List 0 shuffled songs:" << endl;
+    playlist.listShuffledSongs(0);
+
+    cout << "List 1 shuffled songs:" << endl;
+    playlist.listShuffledSongs(0);
+
+    cout << "List 10 shuffled songs:" << endl;
     playlist.listShuffledSongs(10);
 
     // should generate already in playlist message and return true
@@ -35,6 +51,7 @@ void test1() {
 }
 
 void testAll() {
+    cout << "Run all tests." << endl;
     test1();
     cout << "Successfully completed all tests." << endl;
 }

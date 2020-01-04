@@ -29,7 +29,7 @@ public:
     void listAllSongs() const;
 
     // list songs in shuffled order until count number song have been output
-    void listShuffledSongs(int count) const;
+    void listShuffledSongs(unsigned int count) const;
 
     // true if song found in playlist
     bool isInPlaylist(const string& song) const;

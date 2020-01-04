@@ -38,7 +38,7 @@ void Playlist::listAllSongs() const {
 }
 
 // list shuffled songs with count
-void Playlist::listShuffledSongs(int count) const {
+void Playlist::listShuffledSongs(unsigned int count) const {
 }
 
 ostream& operator<<(ostream& Out, const Playlist& playlist) {
