@@ -12,18 +12,18 @@ class Playlist {
 
 public:
     // constructor with default name
-    explicit Playlist(const string& playlistName);
+    explicit Playlist(const string& name);
 
     // destructor
     virtual ~Playlist();
 
     // add a new song
     // return true if successful, false if song already in playlist
-    bool addSong(const string& songName);
+    bool addSong(const string& song);
 
     // remove a song
     // return true if successfully removed, false if song not in playlist
-    bool removeSong(const string& songName);
+    bool removeSong(const string& song);
 
     // list all songs
     void listAllSongs() const;
@@ -32,7 +32,7 @@ public:
     void listShuffledSongs(int count) const;
 
     // true if song found in playlist
-    bool isInPlaylist(const string& songName) const;
+    bool isInPlaylist(const string& song) const;
 
 private:
 

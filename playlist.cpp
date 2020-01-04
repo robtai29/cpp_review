@@ -6,7 +6,7 @@
 #include <iostream>
 
 // constructor with default name
-Playlist::Playlist(const string& playlistName) {
+Playlist::Playlist(const string& name) {
 
 }
 
@@ -17,19 +17,19 @@ Playlist::~Playlist() {
 }
 
 // true if song found in playlist
-bool Playlist::isInPlaylist(const string& songName) const {
+bool Playlist::isInPlaylist(const string& song) const {
     return true;
 }
 
 // add a new song
 // return true if successful, false if song already in playlist
-bool Playlist::addSong(const string &songName) {
+bool Playlist::addSong(const string &song) {
     return false;
 }
 
 // remove a song
 // return true if successfully removed, false if song not in playlist
-bool Playlist::removeSong(const string &songName) {
+bool Playlist::removeSong(const string &song) {
     return false;
 }
 
