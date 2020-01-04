@@ -24,7 +24,7 @@ void test1() {
     playlist.listShuffledSongs(0);
 
     cout << "List 1 shuffled songs:" << endl;
-    playlist.listShuffledSongs(0);
+    playlist.listShuffledSongs(1);
 
     cout << "List 10 shuffled songs:" << endl;
     playlist.listShuffledSongs(10);
@@ -48,6 +48,8 @@ void test1() {
     // cannot remove twice, result should be false
     result = playlist.removeSong("Dawning");
     assert(!result);
+
+    cout << "List all songs using << operator:" << endl << playlist << endl;
 }
 
 void testAll() {
