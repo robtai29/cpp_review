@@ -15,7 +15,7 @@ void test1() {
     playlist.addSong("When They Come");
     playlist.addSong("Event Horizon");
     playlist.addSong("Laugavegur");
-    playlist.addSong("The Disccovery");
+    playlist.addSong("The Discovery");
 
     cout << "List all songs:" << endl;
     playlist.listAllSongs();
