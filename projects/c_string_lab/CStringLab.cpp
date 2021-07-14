@@ -17,6 +17,7 @@ int main(){
      std::cout << len << std::endl;
      int count = countVowels(str);
      std::cout << count << std::endl;
+     std::cout << countAlnum(str) << std::endl;
 }
 
 int countConsonants(const char* str){
@@ -43,14 +44,11 @@ int length(const char* str){
    return end - str;
 }
 
-const char* toUpper(const char*){
 
-
-}
 
 int countAlnum(const char* str){
-    int count;
-    for (int i = str; *i != '\n'; i++){
+    int count = 0;
+    for (const char* i = str; *i != '\0'; i++){
         if (isalnum(*i)){
             count++;
         }
