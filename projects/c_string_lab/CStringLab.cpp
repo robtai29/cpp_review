@@ -6,7 +6,7 @@ int countVowels(const char*);
 int length(const char*);
 int countConsonants(const char* str);
 int countAlnum(const char* str);
-const char* toUpper(const char*);
+void toUpper(char*, unsigned int);
 
 int main(){
     const int LENGTH = 10;
@@ -18,6 +18,8 @@ int main(){
      int count = countVowels(str);
      std::cout << count << std::endl;
      std::cout << countAlnum(str) << std::endl;
+     toUpper(str, len);
+     std::cout << str << std::endl;
 }
 
 int countConsonants(const char* str){
@@ -54,4 +56,16 @@ int countAlnum(const char* str){
         }
     }
     return count;
+}
+
+void toUpper(char* str, unsigned int size){
+
+    for (size_t i = 0; i < size; i++){
+        if (isalnum(str[i])){
+            str[i] = toupper(str[i]);
+        }
+
+    }
+
+
 }
