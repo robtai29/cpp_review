@@ -5,7 +5,7 @@ void IntBinarySearchTree: copySubTree(TreeNode*& root, TreeNode*& rhsNode){
         return;
     }
 
-   //need to fix root = new TreeNode{val, nullptr, nullptr};
+   root = new TreeNode{rhsNode-> val, NULL, NULL};
     
     copySubTree(root-> left, rhsNode-> left);
     copySubTree(root-> right, rhsNode-> right);
