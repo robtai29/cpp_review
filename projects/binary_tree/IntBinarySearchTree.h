@@ -1,25 +1,40 @@
 #ifndef INTSEARCHBINARYTREE_H
 #define INTSEARCHBINARYTREE_H
+#include <iostream>
+#include <stdexcept>
+#include <string>
 
-class IntSearchBinaryTree{
+using namespace std;
+
+class IntBinarySearchTree{
 
     public:
-        IntSearchBinaryTree() : root(nullptr) {}
+        IntBinarySearchTree() : root(nullptr) {}
 
         // Copy Constructor
-        IntSearchBinaryTree(IntSearchBinaryTree*);
+        IntBinarySearchTree(IntBinarySearchTree&);
         
         // Destructor
-        ~IntSearchBinaryTree();
+        ~IntBinarySearchTree();
+
 
         //Assignment Operator Overload
-        IntSearchBinaryTree& operator=(const IntSearchBinaryTree&);
+        IntBinarySearchTree& operator=(const IntBinarySearchTree&);
 
         void insert(int);
 
         bool search(int);
 
+        void displayInorder();
+
+        void displayPreorder();
+
+        void displayPostorder();
+
         void remove(int);
+
+        void displaySideways();
+
 
 
     private:
@@ -31,7 +46,7 @@ class IntSearchBinaryTree{
 
         TreeNode* root;
 
-        void destroyTree(TreeNode* node);
+        void destroySubTree(TreeNode* node);
 
         void copySubTree(TreeNode*&, TreeNode*&);
 
@@ -39,8 +54,20 @@ class IntSearchBinaryTree{
 
         bool search(TreeNode*, int);
 
+       void remove(TreeNode*&, int);
+
+        bool isLeaf(TreeNode*);
 
 
+        void displayInorder(TreeNode*);
+
+        void displayPreorder(TreeNode*);
+
+        void displayPostorder(TreeNode*);
+
+        int getMax(TreeNode*);
+
+        void displaySideways(TreeNode*, string = "");
 
 };
 
