@@ -1,14 +1,37 @@
 #include <iostream>
-#include "deque.h"
 #include "LongInt.h"
 
 using namespace std;
 
 int main( ) {
-    LongInt i1("-12323");
-    LongInt i2("-123453534534");
+  LongInt a, b, c, d, e( "-0099999" );
+  cout << "enter for a: ";
+  cin >> a;
+  cout << "enter for b: ";
+  cin >> b;
+  cout << "enter for c: ";
+  cin >> c;
+  cout << "enter for d: ";
+  cin >> d;
+  cout << "a = " << a << endl;
+  cout << "b = " << b << endl;
+  cout << "c = " << c << endl;
+  cout << "d = " << d << endl;
+  cout << "e = " << e << endl;
 
-    cout << i2;
-    
-    
+  LongInt f = e;
+  cout << "f = " << f << endl;
+
+  cout << a << " + " << b << " =  " << ( a + b ) << endl;
+  cout << a << " - " << b << " =  " << ( a - b ) << endl;
+  cout << b << " - " << a << " =  " << ( b - a ) << endl;
+  cout << b << " + " << a << " =  " << ( b + a ) << endl;
+  cout << a << " == " << c << " =  " << ( a == c ) << endl;
+  cout << a << " != " << c << " =  " << ( a != c ) << endl;
+  cout << a << " > " << d << " =  " << ( a > d ) << endl;
+  cout << a << " >= " << d << " =  " << ( a >= d ) << endl;
+  cout << a << " < " << d << " =  " << ( a < d ) << endl;
+  cout << a << " <= " << d << " =  " << ( a <= d ) << endl;
+  cout << "f = f - 1 = " << ( f = f + *( new LongInt( "-1" ) ) ) << endl;
+  cout << "e = " << e << endl;
 }
