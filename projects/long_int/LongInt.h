@@ -9,7 +9,7 @@ using namespace std;
 class LongInt{
 
     friend ostream& operator<<(ostream&, const LongInt&);
-    friend istream& operator>>(istream&, const LongInt&);
+    friend istream& operator>>(istream&, LongInt&);
 
     public:
         LongInt();
@@ -20,8 +20,8 @@ class LongInt{
         ~LongInt();
 
         //arithmetic operator
-        LongInt& operator+(const LongInt&);
-        LongInt& operator-(const LongInt&);
+        LongInt operator+(const LongInt&);
+        LongInt operator-(const LongInt&);
 
         //assignment operator
         LongInt& operator=(const LongInt&);
@@ -38,7 +38,9 @@ class LongInt{
     private:
         Deque<char> deque_;
         bool negative;
-
+        int compareTo(const LongInt & rhs) const;
+        int compareToMagnitude(const LongInt & rhs) const;
+        void removeZeroes();
 };
 
 
