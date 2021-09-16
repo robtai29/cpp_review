@@ -18,17 +18,9 @@ class NodateData{
 
     bool operator==(const NodeData&);
     bool operator!=(const NodeData&);
-    bool operator==(const NodeData&);
-    bool operator==(const NodeData&);
-    bool operator==(const NodeData&);
-
 
     private:
     string data;
-
-
-
-
 
 };
 
