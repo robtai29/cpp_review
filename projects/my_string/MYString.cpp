@@ -57,7 +57,12 @@ MYString::MYString(const char* rhs){
 }
 
 MYString::MYString(const MYString& rhs){
-    *this = rhs;
+    cap = rhs.cap;
+    end = rhs.end;
+    str = new char[cap];
+    for (int i = 0; i < end; i++){
+        str[i] = rhs.str[i];
+    }
 }
 
 MYString::~MYString(){

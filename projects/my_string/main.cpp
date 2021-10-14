@@ -49,7 +49,7 @@ int main(){
 
   bubblesort(v);
     cout << "\nSorted\n";
-    for (MYString& str : v){
+    for (MYString str : v){
         cout << str << endl;
     }
     
