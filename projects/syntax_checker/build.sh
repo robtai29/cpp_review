@@ -12,12 +12,13 @@ echo "Time to get some coding done!"
 echo -e "*** compiling with clang++ to create an executable called myprogram \n"
 
 clang++ --version
-clang++ -std=c++17 -Wall -Wextra -Wno-sign-compare *.cpp -g -o myprogram
+clang++ -std=c++17 -Wall -Wextra -Wno-sign-compare *.cpp -g -o main
 
 
 echo -e "*** running myprogram\n"
 
-./myprogram
+chmod +x ./main
+./main file.txt
 
 # valgrind will detect memory leaks
 # echo "*** running with valgrind"
