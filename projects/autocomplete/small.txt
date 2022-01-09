@@ -1,0 +1,15 @@
+5 cat
+12 dog
+1 ant
+3 banana
+2 ban
+12 bark 
+2 cin
+3 cout
+14 meow
+12 bike
+1 bin
+3 bool
+1 carry
+2 catch
+12 call

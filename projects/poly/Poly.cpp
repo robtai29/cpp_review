@@ -110,7 +110,7 @@ void Poly::resize(int newSize){
 
 }
 
-    int Poly::getCoeff(int expo){
+    int Poly::getCoeff(int expo) const{
         if (expo < 0 || expo > size -1){
             return 0;
         }
@@ -128,6 +128,27 @@ void Poly::resize(int newSize){
         }
 
         (*this).arr[expo] = coeff;
+    }
+
+    Poly Poly::operator+(const Poly& other) const{
+        if (this-> size > other.size){
+            Poly temp = 
+        }
+
+
+
+        
+    }
+
+
+    Poly Poly::operator-(const Poly& other) const{
+        Poly temp(other);
+        for (int i = 0; i < other.size; i++){
+            temp.arr[i] *= -1;
+        }
+
+        return (*this)- other;
+
     }
 
 int main(){

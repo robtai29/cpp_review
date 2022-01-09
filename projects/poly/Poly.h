@@ -10,7 +10,8 @@ class Poly{
         Poly(int coeff);
         Poly(const Poly& other);
         ~Poly();
-
+        Poly operator+(const Poly& other) const;
+        Poly operator-(const Poly& other) const;
         bool operator==(const Poly& other);
         bool operator!=(const Poly& other);
         Poly& operator=(const Poly& other);
@@ -18,7 +19,7 @@ class Poly{
         
 void resize(int newSize);
     void setCoeff(int expo, int coeff);
-    int getCoeff(int);
+    int getCoeff(int) const;
 
 
     private:
